@@ -1,0 +1,29 @@
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# VS Code backups
+history/
+*.tmp
+*.bak
+
+# VS Code extensions data
+.vscode-test/
+
+# OS-specific junk
+Thumbs.db
+.DS_Store
+
+# V language build artifacts
+v.c
+v.o
+v.js
+vlib/
+modules/
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
