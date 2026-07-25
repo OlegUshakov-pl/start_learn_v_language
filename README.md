@@ -19,3 +19,11 @@ Editor
 [Zed editor](https://zed.dev/download)
 
 My first programm
+
+#Day 3
+
+Documentation
+
+ChatGPT
+
+![Gif](./gifs/function.gif)
