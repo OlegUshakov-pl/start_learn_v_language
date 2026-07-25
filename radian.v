@@ -2,11 +2,12 @@ import os
 import math
 
 fn main(){
-ch:=os.input("Enter degrees or radians")
+  ch:=os.input("Enter degrees or radians:\n")
 match ch {
 'degrees' { degrees() }
 'radians' { radius() }
 else { println('Unknown option') }
+}
 }
 
 fn degrees() {
