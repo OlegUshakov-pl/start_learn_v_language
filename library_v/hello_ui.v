@@ -12,7 +12,7 @@ fn main() {
         bg_color:     gg.rgb(30, 30, 45)
         width:        500
         height:       350
-        window_title: 'Привет из GG'
+        window_title: 'Hello from GG'
         user_data:    app
         frame_fn:     frame
         event_fn:     event
