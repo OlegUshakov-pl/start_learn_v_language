@@ -13,11 +13,14 @@ else { println('Unknown option') }
 fn degrees() {
 deg_r := os.input("Enter degree: ").f64()
 rad_g := deg_r * math.pi / 180
-println('Answer is: ${rad_g:.2f} radians')
+println('Answer is: ${rad_g:.2f} radians\n')
+os.input('Press Enter to exit...')
 }
 
 fn radius() {
 rad_g := os.input("Enter radian: ").f64()
 deg_r := rad_g * 180 / math.pi
-println('Answer is: ${deg_r:.2f} degrees')
+println('Answer is: ${deg_r:.2f} degrees\n')
+os.input('Press Enter to exit...')
 }
+

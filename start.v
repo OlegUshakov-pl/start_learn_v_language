@@ -16,11 +16,11 @@ fn start() {
     for area in areas {
         println('Hello, ${area} developers!')
     }
-    os.input('Push any key')
+    os.input('Press Enter to exit...')
 }
 
 fn add(a int, b int){
     c :=a+b
     println('The sum of ${a} and ${b} is ${c}')
-    os.input('Push any key')
+    os.input('Press Enter to exit...')
 }
