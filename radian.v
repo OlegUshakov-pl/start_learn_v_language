@@ -2,28 +2,21 @@ import os
 import math
 
 fn main(){
-ch:=os.input("Enter  ")
-match ch{
-"degrees"{ 
-	deg:=os.input("Enter degree: ").f64()
-	deg (deg f64)
-}
-'radians'{ 
-	rad:= os.input("Enter radian: ").f64()
-	rad (rad f64)
-}
+ch:=os.input("Enter degrees or radians")
+match ch {
+'degrees' { degrees() }
+'radians' { radius() }
+else { println('Unknown option') }
 }
 
-deg (deg f64)f64
-{
-deg_f:= deg.f64()
-rad:= deg_f * math.pi / 180
-println('Answer is: ${rad:.2f} radians')
+fn degrees() {
+deg_r := os.input("Enter degree: ").f64()
+rad_g := deg_r * math.pi / 180
+println('Answer is: ${rad_g:.2f} radians')
 }
 
-fn rad(rad f64)f64
-{
-rad_f:= rad.f64()
-r:=rad_f * 180 / math.pi
-println('Answer is: ${r:.2f} degrees')
+fn radius() {
+rad_g := os.input("Enter radian: ").f64()
+deg_r := rad_g * 180 / math.pi
+println('Answer is: ${deg_r:.2f} degrees')
 }
