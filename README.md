@@ -20,7 +20,7 @@ Editor
 
 My first programm
 
-#Day 3
+# Day 3
 
 Documentation
 
