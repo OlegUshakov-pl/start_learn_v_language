@@ -14,4 +14,7 @@ for item in arr_n{
 
 println('Sum equal: ${sum}')
 
+os.input('Press key...')
+
 }
+
