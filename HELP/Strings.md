@@ -79,3 +79,18 @@ There are more specialized methods (for example related to Unicode, identifiers,
 
 You can see the full up-to-date list here:
 [https://modules.vlang.io/builtin.html#string](https://modules.vlang.io/builtin.html#string)
+
+
+---
+name := 'Bob'
+assert name[0] == u8(66)   // indexing gives a byte
+assert name[1..3] == 'ob'  // slicing gives a string
+
+str := 'Hello'
+
+// byte → string
+println(str[2].ascii_str())   // l
+
+//  runes (if you need Unicode-symbols)
+println(str.runes()[2])       // l   (тип rune)
+println(str.runes()[2].str()) // l   (тип string)
