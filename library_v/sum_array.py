@@ -8,4 +8,4 @@ sum=0
 for sum in arr:
     sum +=arr[0]
 
-print ('Summ if array:', sum)
+print ('Sum if array:', sum)
