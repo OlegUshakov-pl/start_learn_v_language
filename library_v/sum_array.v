@@ -2,7 +2,7 @@ import os
 
 fn main(){
 
-mut arr:=os.input("Give mr array: ")
+mut arr:=os.input("Give me array with ',' : ")
 
 arr_n := arr.split(',')
 
@@ -17,4 +17,3 @@ println('Sum equal: ${sum}')
 os.input('Press key...')
 
 }
-
