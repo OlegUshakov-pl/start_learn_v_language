@@ -1,0 +1,11 @@
+[
+  {
+    "label": "V: Run current file",
+    "command": "v",
+    "args": ["run", "$ZED_FILE"],
+    "tags": ["v-main"],
+    "reveal": "always",
+    "use_new_terminal": false,
+    "cwd": "$ZED_DIRNAME"
+  }
+]

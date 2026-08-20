@@ -1,0 +1,8 @@
+[
+  {
+    "context": "Editor && language == V",
+    "bindings": {
+      "f5": ["task::SpawnNearestTask", { "tag": "v-main" }]
+    }
+  }
+]
