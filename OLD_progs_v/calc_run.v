@@ -3,8 +3,8 @@ import os
 
 fn main(){
 
-a:=os.input('Numder a:').int()
-b:=os.input('Numder b:').int()
+a:=os.input('Number a:').int()
+b:=os.input('Number b:').int()
 
 
 println('${calc.title}\n')
