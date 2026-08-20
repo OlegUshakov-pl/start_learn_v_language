@@ -1,32 +1,42 @@
 import os
 import math
 
-fn main(){
+fn main() {
+	a_name := os.input(prompt: 'Enter your name: ')
+	b_sur := os.input(prompt: 'Enter your surname: ')
 
-a_name:= os.input('Enter your name: ')
-b_sur:= os.input('Enter your surname: ')
+	a := get_number('Input side a: ')
+	b := get_number('Input side b: ')
 
-a:=os.input('Input side a: ').f64()
-b:=os.input('Input side b: ').f64()
+	par(a_name, b_sur)
+	multiply(a, b)
 
-par(a_name, b_sur)
-
-multiply(a, b)
-
-os.input('Press Enter to exit...')
-
+	os.input(prompt: 'Press Enter to exit...')
 }
 
-fn par(a_name string, b_sur string){
-println('-----------------------')
-println('Hello ${a_name} ${b_sur}')
-println('-----------------------')
+fn get_number(prompt string) f64 {
+	for {
+		input := os.input(prompt: prompt)
+		if input.len == 0 {
+			println('Please enter a number.')
+			continue
+		}
+		num := input.f64()
+		if num == 0 && input.trim() != '0' {
+			println('Invalid number, try again.')
+			continue
+		}
+		return num
+	}
 }
 
-fn multiply(a f64, b f64){
+fn par(a_name string, b_sur string) {
+	println('--------------------------')
+	println('Hello ${a_name} ${b_sur}')
+	println('--------------------------')
+}
 
- mul:= math.sqrt(a**2 + b**2)
-
- println('The result of the multiplication is: ${mul:.2f}')
-
+fn multiply(a f64, b f64) {
+	mul := math.sqrt(a * a + b * b)
+	println('The result is: ${mul:.2f}')
 }
